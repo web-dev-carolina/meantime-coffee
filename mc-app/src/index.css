@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+:root {
+  --mcblue: rgb(137, 204, 241);
+  --mcblack: rgb(50, 34, 18);
+  --mcgray: #3c342f;
+}

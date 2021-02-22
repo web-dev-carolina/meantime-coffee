@@ -1,1 +1,1 @@
-# meantime-coffee
+# The Meantime Coffee Co.
