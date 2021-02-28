@@ -8,14 +8,15 @@ import JoinTheTeam from './JoinTheTeam.jsx';
 import ContactUs from './ContactUs.jsx';
 import Landing from './Landing.jsx';
 import logo from '../assets/big-logo.png';
+import landingbg from '../assets/pexels-photo.jpg';
 
 const NavbarContainer = () => {
     const [navbg, setNavbg] = useState("../assets/pexels-photo.jpg");
 
     const navstyle = {
         height: '40vh',
-        backgroundImage: 'url(' + navbg + ')'
-    }
+        backgroundImage: 'url(' + navbg + ')',
+    };
 
     const switchbg = (page) => {
         switch (page) {
@@ -32,11 +33,12 @@ const NavbarContainer = () => {
 
     return (
         <>
-            <div style={navstyle}>
-                <Navbar sticky="top" className="navbar" expand="md" collapseOnSelect>
+            <div >
+                <Navbar sticky="top" className="navbar" style={navstyle} expand="md" collapseOnSelect>
                     <Navbar.Brand onClick={() => switchbg("")} className="mr-auto logo-nav" href="/">
                         <img className="mx-5 px-5" src={logo} width="auto" height="100"></img>
                     </Navbar.Brand>
+                    <Navbar.Toggle></Navbar.Toggle>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto roboto">
                             <Nav.Link onClick={() => switchbg("our-coffee")} href="/our-coffee">Our Coffee</Nav.Link>
