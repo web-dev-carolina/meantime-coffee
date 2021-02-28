@@ -1,5 +1,6 @@
 .navbar {
   height: 40vh;
+  background-image: url("./assets/pexels-photo.jpg");
 } 
 
 .nav-link {

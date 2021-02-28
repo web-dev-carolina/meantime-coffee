@@ -11,6 +11,7 @@ import logo from '../assets/big-logo.png';
 import landingbg from '../assets/pexels-photo.jpg';
 
 const NavbarContainer = () => {
+    /* keep this - trying to change the navbar bg on page change */
     const [navbg, setNavbg] = useState("../assets/pexels-photo.jpg");
 
     const navstyle = {
@@ -34,7 +35,7 @@ const NavbarContainer = () => {
     return (
         <>
             <div >
-                <Navbar sticky="top" className="navbar" style={navstyle} expand="md" collapseOnSelect>
+                <Navbar sticky="top" className="navbar" expand="md" collapseOnSelect>
                     <Navbar.Brand onClick={() => switchbg("")} className="mr-auto logo-nav" href="/">
                         <img className="mx-5 px-5" src={logo} width="auto" height="100"></img>
                     </Navbar.Brand>
