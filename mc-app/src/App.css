@@ -1,8 +1,8 @@
 .navbar {
-  background-color: var(--mcgray);
+  height: 40vh;
 }
 
 .nav-link {
-  color: white !important;
+  color: auto;
   font-size: 125%;
 }
