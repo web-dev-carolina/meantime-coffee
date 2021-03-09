@@ -1,3 +1,29 @@
 /* .navbar {
     background-image: url("../assets/regram_laptop.jpg");
 } */
+
+.menu>p {
+    text-align: center;
+}
+
+.coffee-pour-wrapper {
+    max-width: 30vw;
+}
+
+.coffee-pour {
+    overflow: hidden;
+}
+
+.menu-title {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 180%;
+}
+
+.vertical-center {
+    padding-top: 25%;
+}
+
+.header-descr {
+    font-size: 120%;
+}

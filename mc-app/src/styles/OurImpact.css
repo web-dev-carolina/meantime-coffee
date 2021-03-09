@@ -1,102 +1,97 @@
 .impact-content {
-    text-align:center;
-    justify-content: center;
-    margin: auto;
-    padding: 5% 20%;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding: 5% 10%;
 }
 
 h2 {
-    font-size: 34px;
+  font-size: 34px;
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-b,
-strong {
+b, strong {
   font-weight: 700;
 }
 
-i,
-em {
+i, em {
   font-style: italic;
   color: black;
-
 }
 
 figure {
-    padding:20px;
+  padding: 20px;
 }
 
-
 .storefront-img-wrapper {
-    max-height: 200px;
-    overflow: hidden;
-
+  max-height: 300px;
+  overflow: hidden;
 }
 
 .storefront-img {
-    max-width: 100%;
-    overflow: hidden;
-    transform: translateY(-350px);
-
+  max-width: 100%;
+  overflow: hidden;
+  transform: translateY(-50%);
+  left: 0%;
 }
 
 .column {
-    float: left;
-    width: 33.33%;
-    padding: 2%  
+  float: left;
+  width: 33.33%;
+  padding: 2%
 }
-  
-  /* Clear floats after the columns */
-  .impact-grid:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
+/* Clear floats after the columns */
 
-  /* Responsive layout: when screen is less than 900px wide, make three columns stack on top of each other */
+.impact-grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout: when screen is less than 900px wide, make three columns stack on top of each other */
+
 @media screen and (max-width: 900px) {
-    .impact-content {
-        padding: 5%;
-    }
-
-    .column {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-
-    .storefront-img {
-        max-width: 100%;
-        overflow: hidden;
-        transform: translateY(-100px);
-   
-    }
+  .impact-content {
+    padding: 5%;
   }
-
-  .learn-more {
-    transform: translateY(75px);
-    padding-bottom: 50px;
+  .column {
+    width: 100%;
+    margin-bottom: 10px;
   }
+  .storefront-img {
+    max-width: 100%;
+    overflow: hidden;
+    transform: translateY(-100px);
+  }
+}
+
+.learn-more {
+  transform: translateY(75px);
+  padding-bottom: 50px;
+}
 
 .learn-more-button {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    border-radius: 35px;
-    padding: 20px;
-    transition-duration: 0.4s;
-    letter-spacing: 1px;
-    font-weight: 600;
-
-    transform: translateY(-100px);
-
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 35px;
+  padding: 20px;
+  transition-duration: 0.4s;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transform: translateY(-100px);
 }
 
 .learn-more-button:hover {
-    background-color: black;
-    color: white;
-    text-decoration: none;
-  }
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+.impact-header>.futura-book {
+  font-size: 110%;
+}
