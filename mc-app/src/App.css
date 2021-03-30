@@ -1,9 +1,39 @@
 .navbar {
   height: 40vh;
   background-image: url("./assets/pexels-photo.jpg");
-} 
+}
 
 .nav-link {
-  color: auto;
+  color: white;
   font-size: 125%;
+}
+
+.futura-med {
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.futura-bold {
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.futura-demi {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.futura-book {
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.futura-heavy {
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
