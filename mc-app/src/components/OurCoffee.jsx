@@ -35,15 +35,15 @@ const OurCoffee = () => {
                 <p className="menu-item"><strong>mocha</strong> | double shot of espresso mixed with rich ghirardelli chocolate syrup topped with steamed milk and microfoam</p>
 
                 <h2>-not coffee-</h2>
-                <p class="menu-item"><strong>tea</strong> | selection of loose leaf teas, brewed fresh to order</p>
-                <p class="menu-item"><strong>hot chocolate</strong> | steamed milk mixed with rich ghirardelli chocolate syrup</p>
-                <p class="menu-item"><strong>chai latte</strong> | spicy chai steamed with whole milk- try it with espresso to make it a dirty chai</p>
-                <p class="menu-item"><strong>london fog</strong> | loose leaf earl grey steeped with vanilla, topped with steamed milk and foam</p>
-                <p class="menu-item"><strong>apple cider</strong> | warm apple cider perfect for cold days, with just the right amount of spice</p>
+                <p className="menu-item"><strong>tea</strong> | selection of loose leaf teas, brewed fresh to order</p>
+                <p className="menu-item"><strong>hot chocolate</strong> | steamed milk mixed with rich ghirardelli chocolate syrup</p>
+                <p className="menu-item"><strong>chai latte</strong> | spicy chai steamed with whole milk- try it with espresso to make it a dirty chai</p>
+                <p className="menu-item"><strong>london fog</strong> | loose leaf earl grey steeped with vanilla, topped with steamed milk and foam</p>
+                <p className="menu-item"><strong>apple cider</strong> | warm apple cider perfect for cold days, with just the right amount of spice</p>
 
 
                 <h2>-customizations-</h2>
-                <p class="menu-item"><strong>make it iced</strong> | +0.5 • <strong>extra espresso</strong> | +1 • <strong>non-dairy milk</strong> | +0.75 • <strong>add flavor shot</strong> | +0.5</p>
+                <p className="menu-item"><strong>make it iced</strong> | +0.5 • <strong>extra espresso</strong> | +1 • <strong>non-dairy milk</strong> | +0.75 • <strong>add flavor shot</strong> | +0.5</p>
 
             </div>
 
