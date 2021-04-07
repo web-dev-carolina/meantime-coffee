@@ -1,8 +1,9 @@
-import React, {} from 'react';
+import React, { } from 'react';
+import CustomNavbar from "./CustomNavbar.jsx";
 
 const ContactUs = () => {
     return (<>
-    Contact page
+        <CustomNavbar title={"CONTACT US"} />
     </>)
 }
 

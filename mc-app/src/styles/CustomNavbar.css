@@ -1,0 +1,58 @@
+.OUR-IMPACT {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/puppy.jpg') center;
+}
+
+.TAR-HEEL-BORN-TAR-HEEL-BREWED {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/pexels-photo.jpg') center;
+}
+
+.NEWS {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/regram_laptop.jpg') bottom;
+}
+
+.OUR-COFFEE {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/kahlo-coffee.jpg') bottom;
+}
+
+.JOIN-THE-TEAM {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/earthday1.jpg') bottom;
+}
+
+.CONTACT-US {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/contactus.jpg') center;
+}
+
+.custom-nav.JOIN-THE-TEAM>nav>button, .custom-nav.JOIN-THE-TEAM>nav>button>span {
+    border-color: white;
+    color: white;
+}
+
+#root>div>div.custom-nav>nav {
+    max-height: 30vh;
+}
+
+.page-title {
+    padding-top: 5vh;
+    color: white;
+    font-weight: 140%;
+}
+
+.custom-nav {
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.page-title {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 110px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0em;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 100%;
+}

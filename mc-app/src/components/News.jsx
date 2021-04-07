@@ -1,8 +1,10 @@
-import React, {} from 'react';
+import React, { } from 'react';
+import CustomNavbar from './CustomNavbar.jsx';
 
 const News = () => {
-    return (<>
-    News page
+    return (
+    <>
+        <CustomNavbar title={"NEWS"}></CustomNavbar>
     </>)
 }
 

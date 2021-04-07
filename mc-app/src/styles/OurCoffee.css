@@ -1,8 +1,4 @@
-/* .navbar {
-    background-image: url("../assets/regram_laptop.jpg");
-} */
-
-.menu>p {
+.menu>.item-list>p, .menu>h2 {
     text-align: center;
 }
 
@@ -12,6 +8,10 @@
 
 .coffee-pour {
     overflow: hidden;
+}
+
+.menu {
+    margin-top: 3vh;
 }
 
 .menu-title {
@@ -26,4 +26,22 @@
 
 .header-descr {
     font-size: 120%;
+}
+
+.ourcoffee-container {
+    margin-top: 10vh;
+}
+
+.our-menu {
+    font-size: 180%;
+}
+
+.item-list {
+    font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.larger-font {
+    font-size: large;
 }
