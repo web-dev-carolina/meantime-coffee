@@ -5,6 +5,7 @@ import { Row, Container, Col } from 'react-bootstrap';
 
 const News = () => {
     return (<>
+    <CustomNavbar title={"NEWS"}></CustomNavbar>
     <Container>
         <Col>
             <h1>CONGRATULATIONS TO THE MEANTIME EXECUTIVE TEAM!</h1>
