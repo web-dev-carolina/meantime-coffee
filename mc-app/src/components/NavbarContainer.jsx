@@ -24,9 +24,7 @@ const NavbarContainer = () => {
                 <Route exact path="/contact" component={ContactUs} />
             </Switch>
             <div>
-                <Row>
-                    <Footer />
-                </Row>
+                <Footer />
             </div>
         </>
     )
