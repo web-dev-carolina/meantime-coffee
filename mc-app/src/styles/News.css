@@ -1,0 +1,64 @@
+.menu>.item-list>p, .menu>h2 {
+    text-align: center;
+}
+
+.execimg {
+    width:40vh;
+    height:40vh;
+    object-fit:cover;
+}
+
+.leftBar {
+    max-width: 20vw;
+    text-align: left;
+    font-size: 150%;
+    padding-top: 50px;
+    padding-right: 10px;
+}
+
+.execCard {
+    padding-top: 50px;
+}
+
+.rightBar {
+    text-align: left;
+    font-size: 150%;
+    padding-top: 50px;
+    padding-right: 10px;
+}
+
+.menu {
+    margin-top: 3vh;
+}
+
+.menu-title {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 180%;
+}
+
+.vertical-center {
+    padding-top: 25%;
+}
+
+.header-descr {
+    font-size: 120%;
+}
+
+.ourcoffee-container {
+    margin-top: 10vh;
+}
+
+.our-menu {
+    font-size: 180%;
+}
+
+.item-list {
+    font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.larger-font {
+    font-size: large;
+}
