@@ -17,11 +17,11 @@ const News = () => {
     <CustomNavbar title={"NEWS"}></CustomNavbar>
     <Container>
         <Row>
-            <Col className="leftBar">
-                <h1 className="leftBar">CONGRATULATIONS TO THE MEANTIME EXECUTIVE TEAM!</h1>
+            <Col xs lg="4" className="leftBar">
+                <h1 className="leftBarTxt"><strong>CONGRATULATIONS TO THE MEANTIME EXECUTIVE TEAM!</strong></h1>
                 <p>April 25, 2019</p>
             </Col>
-            <Col className="rightBar">
+            <Col xs lg="8" className="rightBar">
                 <Row className="execCard">
                     <Col>
                         <div className="execimg">
@@ -96,10 +96,6 @@ const News = () => {
                     <p>Favorite drink: London fog</p>
                     </Col>
                 </Row>
-            
-            
-            
-            
             </Col>
         </Row>
     </Container>

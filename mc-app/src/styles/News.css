@@ -9,11 +9,19 @@
 }
 
 .leftBar {
-    max-width: 20vw;
+    box-sizing: border-box;
     text-align: left;
     font-size: 150%;
     padding-top: 50px;
-    padding-right: 10px;
+    margin: 0;
+}
+
+.leftBarTxt {
+    text-align: left;
+    font-size: 120%;
+    padding-top: 50px;
+    margin: 0;
+    
 }
 
 .execCard {
@@ -21,10 +29,14 @@
 }
 
 .rightBar {
+    box-sizing: border-box;
     text-align: left;
     font-size: 150%;
     padding-top: 50px;
-    padding-right: 10px;
+    margin-left: 0px;
+    float: right;
+    width: 70%;
+    
 }
 
 .menu {
