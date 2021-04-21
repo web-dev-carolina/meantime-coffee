@@ -1,0 +1,30 @@
+.contact-content {
+    margin: auto;
+    padding: 5% 10%;
+  }
+  
+.contact-header {
+    line-height: 50px;
+}
+
+.contact-form{
+    font-size: 17px;
+}
+
+.contact-form-button {
+    white-space: pre;
+}
+
+h2 {
+    font-size: 34px;
+}
+  
+p {
+    font-size: 18px;
+}
+  
+b, strong {
+    font-weight: 700;
+}
+
+

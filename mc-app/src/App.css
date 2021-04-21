@@ -1,11 +1,13 @@
 .navbar {
   height: 40vh;
-  background-image: url("./assets/pexels-photo.jpg");
+  /* background-image: url("./assets/pexels-photo.jpg"); */
 }
 
-.nav-link {
-  color: white;
-  font-size: 125%;
+.nav-links>.nav-link {
+  color: white !important;
+  font-size: 120%;
+  font-weight: 550;
+  min-width: 90px !important;
 }
 
 .futura-med {
@@ -36,4 +38,8 @@
   font-family: futura-pt, sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+.bold {
+  font-weight: bold;
 }
