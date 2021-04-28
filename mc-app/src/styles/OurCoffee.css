@@ -8,6 +8,7 @@
 
 .coffee-pour {
     overflow: hidden;
+    max-width: 90vw;
 }
 
 .menu {
@@ -44,4 +45,10 @@
 
 .larger-font {
     font-size: large;
+}
+
+@media only screen and (max-width: 756px){
+    .delish-ethical {
+        text-align: center;
+    }
 }

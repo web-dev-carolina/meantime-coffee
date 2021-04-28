@@ -35,7 +35,7 @@ const OurImpact = () => {
                 </div>
             </div>
 
-            <div className="learn-more futura-book"><a className="learn-more-button" href="https://campusy.unc.edu/" target="_blank" rel="noreferrer">LEARN MORE ABOUT THE CAMPUS Y</a></div>
+            <div className="learn-more futura-book mb-5"><a className="learn-more-button" href="https://campusy.unc.edu/" target="_blank" rel="noreferrer">LEARN MORE ABOUT THE CAMPUS Y</a></div>
         </div>
 
     </>)

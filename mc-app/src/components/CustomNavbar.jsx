@@ -11,7 +11,7 @@ const CustomNavbar = (props) => {
         <div className={"custom-nav " + classname}>
             <Navbar className="navbar" dark expand="lg" collapseOnSelect>
                 <Navbar.Brand className="mr-auto logo-nav" href="/">
-                    <img className="mx-5 px-5" src={logo} width="auto" height="100"></img>
+                    <img className="nav-logo" src={logo} width="auto" height="100"></img>
                 </Navbar.Brand>
                 <Navbar.Toggle></Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
