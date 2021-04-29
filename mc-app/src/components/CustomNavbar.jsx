@@ -9,7 +9,7 @@ const CustomNavbar = (props) => {
 
     return (
         <div className={"custom-nav " + classname}>
-            <Navbar className="navbar" dark expand="lg" collapseOnSelect>
+            <Navbar className="navbar" expand="lg" collapseOnSelect>
                 <Navbar.Brand className="mr-auto logo-nav" href="/">
                     <img className="nav-logo" src={logo} width="auto" height="100"></img>
                 </Navbar.Brand>
