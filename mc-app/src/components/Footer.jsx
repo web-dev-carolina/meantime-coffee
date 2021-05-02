@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 const Footer = (props) => {
     return (
         <div>
-            <Row>
+            <Row className="footer-row">
                 {/* footer goes here */}
                 <footer id="footer">
                     <div className="footer-wrapper">

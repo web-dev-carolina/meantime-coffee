@@ -105,3 +105,8 @@ li {
     padding: 0px !important;
   }
 }
+
+.footer-row {
+  max-width: 100vw !important;
+  margin: 0px !important;
+}
