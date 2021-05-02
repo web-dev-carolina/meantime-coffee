@@ -21,9 +21,7 @@ const pass = functions.config().gmail.password
 
 //create and config transporter
 let transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
+    service: 'gmail',
     auth: {
         user: email,
         pass: pass,
@@ -40,28 +38,29 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
     if (req.method === 'OPTIONS') {
         res.end()
         return;
-    }
+    } else {
 
-    cors(req, res, () => {
-        if (req.method !== 'POST') {
-            return
-        }
+        cors(req, res, () => {
+            if (req.method !== 'POST') {
+                return
+            }
 
-        const mailOptions = {
-            from: req.body.email,
-            replyTo: req.body.email,
-            to: email,
-            subject: req.body.subject,
-            text: req.body.message,
-            html: `<p>${req.body.message}</p>`,
-        }
+            const mailOptions = {
+                from: req.body.email,
+                replyTo: req.body.email,
+                to: email,
+                subject: req.body.name + ": " + req.body.subject,
+                text: req.body.message,
+                html: `<p>${req.body.message}</p>`,
+            }
 
-        return transporter.sendMail(mailOptions).then(() => {
-            console.log('New email sent to:', email)
-            res.status(200).send({
-                isEmailSend: true
+            return transporter.sendMail(mailOptions).then(() => {
+                console.log('New email sent to:', email)
+                res.status(200).send({
+                    isEmailSend: true
+                })
+                return;
             })
-            return;
         })
-    })
+    }
 });
