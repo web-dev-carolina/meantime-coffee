@@ -9,19 +9,21 @@ const CustomNavbar = (props) => {
 
     return (
         <div className={"custom-nav " + classname}>
-            <Navbar className="navbar" dark expand="lg" collapseOnSelect>
+            <Navbar className="navbar" variant="dark" expand="lg" collapseOnSelect>
                 <Navbar.Brand className="mr-auto logo-nav" href="/">
-                    <img className="mx-5 px-5" src={logo} width="auto" height="100"></img>
+                    <img className="nav-logo" src={logo} width="auto" height="100"></img>
                 </Navbar.Brand>
                 <Navbar.Toggle></Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="ml-auto futura-med nav-links">
-                        <Nav.Link href="/our-coffee">OUR COFFEE</Nav.Link>
-                        <Nav.Link href="/our-impact">OUR IMPACT</Nav.Link>
-                        <Nav.Link href="https://www.clover.com/online-ordering/meantime-coffee-company-chapel-hill">ORDER ONLINE</Nav.Link>
-                        <Nav.Link href="/blog">NEWS</Nav.Link>
-                        <Nav.Link href="/join-the-team">JOIN THE TEAM</Nav.Link>
-                        <Nav.Link href="/contact">CONTACT US</Nav.Link>
+                    <Nav className="ml-auto mr-4">
+                        <Row className="ml-auto futura-med nav-links">
+                            <Nav.Link href="/our-coffee">OUR COFFEE</Nav.Link>
+                            <Nav.Link href="/our-impact">OUR IMPACT</Nav.Link>
+                            <Nav.Link href="https://www.clover.com/online-ordering/meantime-coffee-company-chapel-hill">ORDER ONLINE</Nav.Link>
+                            <Nav.Link href="/blog">NEWS</Nav.Link>
+                            <Nav.Link href="/join-the-team">JOIN THE TEAM</Nav.Link>
+                            <Nav.Link href="/contact">CONTACT US</Nav.Link>
+                        </Row>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

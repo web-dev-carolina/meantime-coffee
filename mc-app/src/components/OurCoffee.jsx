@@ -15,14 +15,14 @@ const OurCoffee = () => {
                     </div>
                 </Col>
                 <Col>
-                    <div className="vertical-center">
+                    <div className="vertical-center delish-ethical">
                         <h2 className="futura-heavy">Delicious and Ethical.</h2>
                         <p className="futura-book larger-font">The Meantime partners with <span className="bold">Carrboro Coffee Roasters</span>, "the premiere small-batch artisan roaster in the Carrboro/Chapel Hill area and beyond," to bring UNC the finest and freshest coffee from around the world.</p>
                     </div>
                 </Col>
             </Row>
-            <div className="menu">
-                <h1 className="futura-heavy our-menu">OUR MENU</h1>
+            <div className="menu pb-3">
+                <h1 className="futura-heavy our-menu text-center">OUR MENU</h1>
                 <h2 className="futura-med">-coffee-</h2>
                 <div className="item-list">
                     <p className="menu-item"><strong>drip coffee</strong> |&nbsp;freshly brewed medium or dark roast coffee- try adding espresso to make a redeye</p>
@@ -49,7 +49,7 @@ const OurCoffee = () => {
                     <p className="menu-item"><strong>make it iced</strong> | +0.5 • <strong>extra espresso</strong> | +1 • <strong>non-dairy milk</strong> | +0.75 • <strong>add flavor shot</strong> | +0.5</p>
                 </div>
             </div>
-
+            <hr className="pb-5"></hr>
 
         </Container>
 

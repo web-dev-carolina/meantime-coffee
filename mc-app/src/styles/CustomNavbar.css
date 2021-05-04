@@ -23,8 +23,7 @@
 }
 
 .custom-nav.JOIN-THE-TEAM>nav>button, .custom-nav.JOIN-THE-TEAM>nav>button>span {
-    border-color: white;
-    color: white;
+    border-color: black;
 }
 
 #root>div>div.custom-nav>nav {
@@ -55,4 +54,36 @@
     font-weight: 400;
     font-style: normal;
     max-width: 100%;
+}
+
+.nav-logo {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: white !important;
+    color: white !important;
+    margin: 2vw;
+}
+
+@media only screen and (max-width: 676px) {
+    .logo-nav.navbar-brand {
+        max-width: 75vw !important;
+    }
+    .nav-logo {
+        max-width: 85vw;
+        height: auto;
+        margin: auto 0;
+        padding-left: 0;
+        margin-right: 5vw;
+    }
+    .nav-link {
+        padding-right: 4vw !important;
+    }
+    .navbar-dark .navbar-toggler {
+        margin: 0px;
+    }
 }

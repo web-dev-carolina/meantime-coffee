@@ -1,0 +1,112 @@
+#footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 600px;
+  background-color: #3c342f;
+  text-align: center;
+  color: white;
+}
+
+.footer-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 80px 8%;
+
+}
+
+.menu-simple {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-footer-icons {
+  margin-right: 1px;
+  align-items: center;
+}
+
+.fa-facebook {
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-envelope {
+  color: white;
+}
+
+.footer-content {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding: 2% 10%;
+}
+
+.footer-title {
+  font-size: 26px;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: 300 !important;
+}
+
+.footer-text {
+  font-size: 16px;
+  font-weight: 300 !important;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.map {
+  align-items: center;
+  padding-top: 1%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30vh
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+
+.responsive-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-column {
+  float: right;
+  width: 50%;
+  padding: 1%;
+}
+
+em {
+  font-style: italic;
+}
+
+li {
+  display: inline;
+  padding-left: 1em;
+}
+
+@media only screen and (max-width: 756px) {
+  .footer-wrapper {
+    padding: 0px !important;
+  }
+}
+
+.footer-row {
+  max-width: 100vw !important;
+  margin: 0px !important;
+}

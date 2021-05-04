@@ -4,38 +4,16 @@
   margin: auto;
   width: 56%;
   padding: 5% 3%;
-  
 }
-
-h1 {
-    text-align: center;
-    font-size: 30pt;
-}
-
-
-p {
-    text-align: left;
-    
-  }
 
 p.thick {
   font-weight: bold;
 }
 
-/* Text Over Image */
-.imageContainer {
-  text-align:center;
-  justify-content: center;
-  width: 100%;
-  height: 400px; 
-  background-image: url(../assets/regram_laptop.jpg);
-  position: relative;
-  color: white;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media only screen and (max-width: 756px) {
+  .team-content {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+  }
 }

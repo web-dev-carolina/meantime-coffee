@@ -3,11 +3,13 @@
 }
 
 .coffee-pour-wrapper {
-    max-width: 30vw;
+    max-width: 100%;
+
 }
 
 .coffee-pour {
     overflow: hidden;
+    max-width: 100%;
 }
 
 .menu {
@@ -44,4 +46,16 @@
 
 .larger-font {
     font-size: large;
+}
+
+@media only screen and (max-width: 992px){
+    .delish-ethical {
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .coffee-pour-wrapper {
+        text-align: center;
+
+    }
 }

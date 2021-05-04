@@ -11,6 +11,7 @@ import Footer from './Footer.jsx';
 import logo from '../assets/big-logo.png';
 import landingbg from '../assets/pexels-photo.jpg';
 import '../styles/NavbarContainer.css';
+import '../styles/Footer.css';
 
 const NavbarContainer = () => {
     return (
@@ -25,7 +26,7 @@ const NavbarContainer = () => {
             </Switch>
             <div>
                 <Footer />
-            </div>
+            </div>        
         </>
     )
 }
