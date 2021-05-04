@@ -1,76 +1,80 @@
-.menu>.item-list>p, .menu>h2 {
-    text-align: center;
+.menu > .item-list > p,
+.menu > h2 {
+  text-align: center;
+}
+
+.mainbox {
+    margin-bottom: 25px;
 }
 
 .execimg {
-    width:40vh;
-    height:40vh;
-    object-fit:cover;
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
 }
 
 .leftBar {
-    box-sizing: border-box;
-    text-align: left;
-    font-size: 150%;
-    padding-top: 50px;
-    margin: 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 150%;
+  padding-top: 50px;
+  margin: 0;
 }
 
 .leftBarTxt {
-    text-align: left;
-    font-size: 120%;
-    padding-top: 50px;
-    margin: 0;
-    
+  text-align: left;
+  font-size: 120%;
+  padding-top: 50px;
+  margin: 0;
 }
 
 .execCard {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .rightBar {
-    box-sizing: border-box;
-    text-align: left;
-    font-size: 150%;
-    padding-top: 50px;
-    margin-left: 0px;
-    float: right;
-    width: 70%;
-    
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 150%;
+  padding-top: 50px;
+  margin-left: 0px;
+  float: right;
+  width: 70%;
 }
 
 .menu {
-    margin-top: 3vh;
+  margin-top: 3vh;
 }
 
 .menu-title {
-    padding-top: 5%;
-    padding-bottom: 2%;
-    font-size: 180%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  font-size: 180%;
 }
 
 .vertical-center {
-    padding-top: 25%;
+  padding-top: 25%;
 }
 
 .header-descr {
-    font-size: 120%;
+  font-size: 120%;
 }
 
 .ourcoffee-container {
-    margin-top: 10vh;
+  margin-top: 10vh;
 }
 
 .our-menu {
-    font-size: 180%;
+  font-size: 180%;
 }
 
 .item-list {
-    font-family: futura-pt, sans-serif;
+  font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .larger-font {
-    font-size: large;
+  font-size: large;
 }
+
