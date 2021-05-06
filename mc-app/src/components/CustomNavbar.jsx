@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Row, Col, Image } from 'react-bootstrap';
+import { Navbar, Nav, Row } from 'react-bootstrap';
 import logo from '../assets/big-logo.png';
 import '../styles/CustomNavbar.css';
 
@@ -11,7 +11,7 @@ const CustomNavbar = (props) => {
         <div className={"custom-nav " + classname}>
             <Navbar className="navbar" variant="dark" expand="lg" collapseOnSelect>
                 <Navbar.Brand className="mr-auto logo-nav" href="/">
-                    <img className="nav-logo" src={logo} width="auto" height="100"></img>
+                    <img className="nav-logo" src={logo} width="auto" height="100" alt="custom navbar bg"></img>
                 </Navbar.Brand>
                 <Navbar.Toggle></Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">

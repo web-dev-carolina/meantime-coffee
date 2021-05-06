@@ -1,4 +1,4 @@
-import React, {} from 'react';
+import React from 'react';
 import { Row, Container, Col } from 'react-bootstrap';
 import CustomNavbar from "./CustomNavbar.jsx";
 import '../styles/News.css';
@@ -9,9 +9,6 @@ import db from '../assets/DhvaniBhatia .jpeg';
 import fz from '../assets/FehmiZengince.jpeg';
 import gb from '../assets/GeoffBell.png';
 import jr from '../assets/JackRobertson.jpeg';
-
-
-
 
 const News = () => {
     return (<>
@@ -26,7 +23,7 @@ const News = () => {
                 <Row className="execCard">
                     <Col>
                         <div className="execimg">
-                            <img className="execimg" src={oz}></img>
+                            <img className="execimg" src={oz} alt="exec team member"></img>
                         </div></Col>
                     <Col>
                     <h2 className="futura-heavy">Chief Executive Officer - Oznur Ikiz</h2>
@@ -39,7 +36,7 @@ const News = () => {
                 <Row className="execCard">
                     <Col>
                         <div className="execimg">
-                            <img className="execimg" src={em}></img>
+                            <img className="execimg" src={em} alt="exec team member"></img>
                         </div></Col>
                     <Col>
                     <h2 className="futura-heavy">Chief Human Resources Officer - Elizabeth Moore</h2>
@@ -51,7 +48,7 @@ const News = () => {
                 <Row className="execCard">
                     <Col>
                         <div className="execimg">
-                            <img className="execimg" src={db}></img>
+                            <img className="execimg" src={db} alt="exec team member"></img>
                         </div></Col>
                     <Col>
                     <h2 className="futura-heavy">Chief Marketing Officer - Dhvani Bhatia</h2>
@@ -63,7 +60,7 @@ const News = () => {
                 <Row className="execCard">
                     <Col>
                         <div className="execimg">
-                            <img className="execimg" src={fz}></img>
+                            <img className="execimg" src={fz} alt="exec team member"></img>
                         </div></Col>
                     <Col>
                     <h2 className="futura-heavy">Chief Operations Officer - Fehmi Zengince</h2>
@@ -75,7 +72,7 @@ const News = () => {
                 <Row className="execCard">
                     <Col>
                         <div className="execimg">
-                            <img className="execimg" src={gb}></img>
+                            <img className="execimg" src={gb} alt="exec team member"></img>
                         </div></Col>
                     <Col>
                     <h2 className="futura-heavy">Chief Financial Officer - Geoff Bell </h2>
@@ -88,7 +85,7 @@ const News = () => {
                 <Row className="execCard">
                     <Col>
                         <div className="execimg">
-                            <img className="execimg" src={jr}></img>
+                            <img className="execimg" src={jr} alt="exec team member"></img>
                         </div></Col>
                     <Col>
                     <h2 className="futura-heavy">Chief Financial Officer - Jack Robertson </h2>

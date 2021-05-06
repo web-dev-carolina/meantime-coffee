@@ -41,7 +41,7 @@ const Footer = (props) => {
                         {/*map */}
                         <div className="map">
                             <p style={{ textAlign: "center" }}>
-                                <iframe className="responsive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d807.8633838220095!2d-79.05176377079127!3d35.911397298758814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2e84532ea11%3A0xab78cc915a63ea69!2s180%20E%20Cameron%20Ave%2C%20Chapel%20Hill%2C%20NC%2027514!5e0!3m2!1sen!2sus!4v1618979799330!5m2!1sen!2sus" width="1000" height="150" loading="lazy"></iframe>
+                                <iframe title="gmaps meantime" className="responsive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d807.8633838220095!2d-79.05176377079127!3d35.911397298758814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89acc2e84532ea11%3A0xab78cc915a63ea69!2s180%20E%20Cameron%20Ave%2C%20Chapel%20Hill%2C%20NC%2027514!5e0!3m2!1sen!2sus!4v1618979799330!5m2!1sen!2sus" width="1000" height="150" loading="lazy"></iframe>
                             </p>
                         </div>
                     </div>

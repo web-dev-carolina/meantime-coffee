@@ -11,7 +11,7 @@ const OurCoffee = () => {
             <Row>
                 <Col lg={6}>
                     <div className="coffee-pour-wrapper">
-                        <img className="coffee-pour" src={Coffee}></img>
+                        <img className="coffee-pour" src={Coffee} alt="local coffee brewers"></img>
                     </div>
                 </Col>
                 <Col>

@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Navbar, Nav, Row, Col, Image } from 'react-bootstrap';
-import { Route, Switch, Link } from 'react-router-dom';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import OurCoffee from './OurCoffee.jsx';
 import OurImpact from './OurImpact.jsx';
 import News from './News.jsx';
@@ -8,8 +7,6 @@ import JoinTheTeam from './JoinTheTeam.jsx';
 import ContactUs from './ContactUs.jsx';
 import Landing from './Landing.jsx';
 import Footer from './Footer.jsx';
-import logo from '../assets/big-logo.png';
-import landingbg from '../assets/pexels-photo.jpg';
 import '../styles/NavbarContainer.css';
 import '../styles/Footer.css';
 
