@@ -49,3 +49,11 @@
 .bold {
   font-weight: bold;
 }
+
+.italicize {
+  font-style: italic;
+}
+
+html {
+  scroll-behavior: smooth;
+}

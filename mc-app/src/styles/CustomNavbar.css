@@ -1,25 +1,25 @@
 .OUR-IMPACT {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/puppy.jpg') center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/puppy.jpg') center;
 }
 
 .TAR-HEEL-BORN-TAR-HEEL-BREWED {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/pexels-photo.jpg') center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/pexels-photo.jpg') center;
 }
 
 .NEWS {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/regram_laptop.jpg') bottom;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/regram_laptop.jpg') bottom;
 }
 
 .OUR-COFFEE {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/kahlo-coffee.jpg') bottom;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/kahlo-coffee.jpg') bottom;
 }
 
 .JOIN-THE-TEAM {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/earthday1.jpg') bottom;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/earthday1.jpg') bottom;
 }
 
 .CONTACT-US {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/contactus.jpg') center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/contactus.jpg') center;
 }
 
 .custom-nav.JOIN-THE-TEAM>nav>button, .custom-nav.JOIN-THE-TEAM>nav>button>span {
@@ -36,24 +36,37 @@
     font-weight: 140%;
 }
 
+.navbar {
+    max-height: 30vh;
+}
+
+.fa-angle-down {
+    color: white;
+}
+
 .custom-nav {
     height: 70vh;
+    min-height: fit-content;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
+.custom-nav.TAR-HEEL-BORN-TAR-HEEL-BREWED {
+    height: 100vh;
+}
+
 .page-title {
     text-align: center;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-size: 110px;
     line-height: 1.2em;
     text-transform: uppercase;
-    text-decoration: none;
     letter-spacing: 0em;
     font-weight: 400;
     font-style: normal;
     max-width: 100%;
+    padding: 0px 20vw;
 }
 
 .nav-logo {
@@ -69,12 +82,44 @@
     margin: 2vw;
 }
 
+.landing-subtitle {
+    font-size: 27px;
+    color: white;
+    text-align: center;
+}
+
+.btn-wrapper {
+    margin-left: calc(50% - 50px);
+}
+
+.scrollbtn {
+    margin-top: 140px !important;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+
+.scroll-down {
+    font-size: 12px;
+    line-height: 1.8em;
+    letter-spacing: .015em;
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 15%;
+}
+
+a.btn-a, a.btn-a:hover {
+    color: white;
+    text-decoration: none !important;
+}
+
 @media only screen and (max-width: 676px) {
     .logo-nav.navbar-brand {
         max-width: 75vw !important;
     }
     .nav-logo {
         max-width: 85vw;
+        max-height: 100px;
         height: auto;
         margin: auto 0;
         padding-left: 0;
@@ -85,5 +130,20 @@
     }
     .navbar-dark .navbar-toggler {
         margin: 0px;
+    }
+    .page-title {
+        padding: 0px 5vw;
+        font-size: 430%;
+    }
+    .landing-subtitle {
+        padding: 0px 10vw;
+    }
+    .OUR-IMPACT, .TAR-HEEL-BORN-TAR-HEEL-BREWED, .OUR-COFFEE, .JOIN-THE-TEAM, .CONTACT-US {
+        background-size: 120% 13%;
+        background-position: top; 
+    }
+   .NEWS {
+        background-size: 200% 13%;
+        background-position: top; 
     }
 }

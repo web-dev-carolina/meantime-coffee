@@ -10,7 +10,7 @@ const Footer = (props) => {
                     <div className="footer-wrapper">
                         <div className="social-footer-icons py-3">
                             <ul className="menu-simple">
-                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+                                
                                 <li><a href="https://www.facebook.com/meantimecoffee/"><i className="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
                                 <li><a href="https://twitter.com/meantimecoffee"><i className="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
                                 <li><a href="http://instagram.com/meantimecoffee"><i className="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
