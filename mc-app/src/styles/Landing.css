@@ -62,7 +62,7 @@
 }
 
 .empower-wrapper {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/people-woman-coffee-meeting.jpg") center;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/startup-photos.jpg") center;
     min-height: 90vh;
     background-attachment: fixed;
     background-position: center;
@@ -159,5 +159,10 @@
         background-color: white;
         padding: 80px 5%;
         margin: 0 auto;
+    }
+    .greatcoffee-wrapper, .empower-wrapper {
+        background-attachment: inherit;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }

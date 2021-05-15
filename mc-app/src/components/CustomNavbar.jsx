@@ -38,7 +38,9 @@ const CustomNavbar = (props) => {
                         <div className="scrollbtn">
                             <a href="#meantimedef" className="btn-a" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
                                 {hovered ? <div className="proxima-reg scroll-down">SCROLL DOWN</div> : <i className="fa fa-angle-down fa-3x" aria-hidden="true"></i>}
-                            </a></div></div>
+                            </a>
+                        </div>
+                    </div>
                 </div> : <></>}
         </div>
     )

@@ -66,7 +66,7 @@
     font-weight: 400;
     font-style: normal;
     max-width: 100%;
-    padding: 0px 20vw;
+    padding: 0px 14vw;
 }
 
 .nav-logo {
@@ -93,7 +93,7 @@
 }
 
 .scrollbtn {
-    margin-top: 140px !important;
+    margin-top: 15%;
     text-align: center;
     width: 100px;
     height: 30px;
@@ -138,12 +138,18 @@ a.btn-a, a.btn-a:hover {
     .landing-subtitle {
         padding: 0px 10vw;
     }
-    .OUR-IMPACT, .TAR-HEEL-BORN-TAR-HEEL-BREWED, .OUR-COFFEE, .JOIN-THE-TEAM, .CONTACT-US {
-        background-size: 120% 13%;
-        background-position: top; 
+    .custom-nav {
+        height: 70vh;
+        min-height: fit-content;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: inherit;
     }
-   .NEWS {
-        background-size: 200% 13%;
-        background-position: top; 
+    .scrollbtn {
+        margin-top: 40%;
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        top: 90vh !important;
     }
 }
