@@ -46,7 +46,6 @@ const Footer = (props) => {
                         </div>
                     </div>
                 </footer>
-                {/* footer goes here */}
             </Row>
         </div>)
 }

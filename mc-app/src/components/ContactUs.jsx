@@ -10,6 +10,7 @@ const ContactUs = () => {
     const [email, setEmail] = React.useState("");
     const [subject, setSubject] = React.useState("");
     const [message, setMessage] = React.useState("");
+    const [disableBtns, setDisableBtns] = React.useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -19,14 +20,13 @@ const ContactUs = () => {
             subject,
             message,
         }
-        console.log(formData);
 
-        Axios.post(
-            'https://us-central1-meantime-d7f65.cloudfunctions.net/sendEmail',
-            formData,
-        ).then(res => {
+        Axios.post('https://us-central1-meantime-d7f65.cloudfunctions.net/sendEmail', formData,).then(res => {
             console.log(res);
-            clearForm();
+            if (res.data.isEmailSend) {
+                clearForm();
+                showSuccess();
+            }
         }).catch();
     };
 
@@ -37,6 +37,10 @@ const ContactUs = () => {
         setSubject("");
         setMessage("");
     };
+
+    const showSuccess = () => {
+        setDisableBtns(true);
+    }
 
     return (<>
         <CustomNavbar title={"CONTACT US"} />
@@ -49,37 +53,78 @@ const ContactUs = () => {
             <div className="contact-form">
                 <Form onSubmit={sendEmail}>
                     <label className="name-label futura-book" htmlFor="name">Name  *</label>
-                    <Form.Group as={Row} className="mb-3 futura-book" controlId="name">
-                        <Col>
-                            <Form.Control name="first-name" required onChange={e => setFname(e.target.value)} value={fname} />
-                            <Form.Label column="sm">First Name</Form.Label>
-                        </Col>
+                    {
+                        disableBtns ?
+                            <> <Form.Group as={Row} className="mb-3 futura-book" controlId="name" >
+                                <Col>
+                                    <Form.Control name="first-name" required onChange={e => setFname(e.target.value)} value={fname} disabled />
+                                    <Form.Label column="sm">First Name</Form.Label>
+                                </Col>
 
-                        <Col>
-                            <Form.Control name="last-name" required onChange={e => setLname(e.target.value)} value={lname} />
-                            <Form.Label column="sm">Last Name</Form.Label>
-                        </Col>
-                    </Form.Group>
+                                <Col>
+                                    <Form.Control name="last-name" required onChange={e => setLname(e.target.value)} value={lname} disabled />
+                                    <Form.Label column="sm">Last Name</Form.Label>
+                                </Col>
+                            </Form.Group>
 
-                    <Form.Group className="mb-4 futura-book" controlId="email">
-                        <Form.Label>Email  *</Form.Label>
-                        <Form.Control name="email" type="email" required onChange={e => setEmail(e.target.value)} value={email} />
-                    </Form.Group>
+                                <Form.Group className="mb-4 futura-book" controlId="email">
+                                    <Form.Label>Email  *</Form.Label>
+                                    <Form.Control name="email" type="email" required onChange={e => setEmail(e.target.value)} value={email} disabled />
+                                </Form.Group>
 
-                    <Form.Group className="mb-4 futura-book" controlId="subject">
-                        <Form.Label>Subject  *</Form.Label>
-                        <Form.Control name="subject" required onChange={e => setSubject(e.target.value)} value={subject} />
-                    </Form.Group>
+                                <Form.Group className="mb-4 futura-book" controlId="subject">
+                                    <Form.Label>Subject  *</Form.Label>
+                                    <Form.Control name="subject" required onChange={e => setSubject(e.target.value)} value={subject} disabled />
+                                </Form.Group>
 
-                    <Form.Group className="mb-4 futura-book" controlId="message">
-                        <Form.Label>Message  *</Form.Label>
-                        <Form.Control name="message" as="textarea" rows={3} required onChange={e => setMessage(e.target.value)} value={message} />
-                    </Form.Group>
+                                <Form.Group className="mb-4 futura-book" controlId="message">
+                                    <Form.Label>Message  *</Form.Label>
+                                    <Form.Control name="message" as="textarea" rows={3} required onChange={e => setMessage(e.target.value)} value={message} disabled />
+                                </Form.Group>
+                                <Form.Row>
+                                    <Col xs={12} sm={6} md={3}>
+                                        <Button className="contact-form-button futura-med" variant="dark" type="submit" disabled>
+                                            <strong>{"   SUCCESS ✓   "}</strong>
+                                        </Button>
+                                    </Col>
+                                    <Col xs={12} sm={6} md={3}>
+                                        <Button className="contact-form-button futura-med" variant="dark" onClick={() => setDisableBtns(false)} >
+                                            <strong>{"   SEND ANOTHER   "}</strong>
+                                        </Button>
+                                    </Col>
+                                </Form.Row></>
+                            : <> <Form.Group as={Row} className="mb-3 futura-book" controlId="name" >
+                                <Col>
+                                    <Form.Control name="first-name" required onChange={e => setFname(e.target.value)} value={fname} />
+                                    <Form.Label column="sm">First Name</Form.Label>
+                                </Col>
+
+                                <Col>
+                                    <Form.Control name="last-name" required onChange={e => setLname(e.target.value)} value={lname} />
+                                    <Form.Label column="sm">Last Name</Form.Label>
+                                </Col>
+                            </Form.Group>
+
+                                <Form.Group className="mb-4 futura-book" controlId="email">
+                                    <Form.Label>Email  *</Form.Label>
+                                    <Form.Control name="email" type="email" required onChange={e => setEmail(e.target.value)} value={email} />
+                                </Form.Group>
+
+                                <Form.Group className="mb-4 futura-book" controlId="subject">
+                                    <Form.Label>Subject  *</Form.Label>
+                                    <Form.Control name="subject" required onChange={e => setSubject(e.target.value)} value={subject} />
+                                </Form.Group>
+
+                                <Form.Group className="mb-4 futura-book" controlId="message">
+                                    <Form.Label>Message  *</Form.Label>
+                                    <Form.Control name="message" as="textarea" rows={3} required onChange={e => setMessage(e.target.value)} value={message} />
+                                </Form.Group>
+                                <Button className="contact-form-button futura-med" variant="dark" type="submit">
+                                    <strong>{"   SUBMIT   "}</strong>
+                                </Button></>
+                    }
 
 
-                    <Button className="contact-form-button futura-med" variant="dark" type="submit">
-                        <strong>   SUBMIT   </strong>
-                    </Button>
                 </Form>
             </div>
 

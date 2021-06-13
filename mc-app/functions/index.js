@@ -13,11 +13,11 @@ const functions = require('firebase-functions');
 const nodemailer = require('nodemailer');
 
 //when this cloud function is already deployed, change the origin to 'https://your-deployed-app-url
-const cors = require('cors')({ origin: true });
+const cors = require('cors')({ origin: 'https://meantimecoffee.com' });
 
 // get email and pass from firebase environment
-const email = functions.config().gmail.email
-const pass = functions.config().gmail.password
+const email = functions.config().gmail.email;
+const pass = functions.config().gmail.password;
 
 //create and config transporter
 let transporter = nodemailer.createTransport({
@@ -31,6 +31,8 @@ let transporter = nodemailer.createTransport({
 //export the cloud function called `sendEmail`
 exports.sendEmail = functions.https.onRequest((req, res) => {
 
+    // console.log({email, pass});
+
     res.set('Access-Control-Allow-Origin', '*')
     res.set('Access-Control-Allow-Methods', 'GET, PUT, POST, OPTIONS')
     res.set('Access-Control-Allow-Headers', '*')
@@ -42,7 +44,7 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
 
         cors(req, res, () => {
             if (req.method !== 'POST') {
-                return
+                return;
             }
 
             const mailOptions = {
@@ -55,10 +57,10 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
             }
 
             return transporter.sendMail(mailOptions).then(() => {
-                console.log('New email sent to:', email)
+                console.log('New email sent to:', email);
                 res.status(200).send({
                     isEmailSend: true
-                })
+                });
                 return;
             })
         })
